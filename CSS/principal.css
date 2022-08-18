@@ -65,10 +65,6 @@ header > div:hover {
 	background: content-box radial-gradient(#FFFAFA, skyblue);
 }
 
-
-
-
-
 nav {
 	display:  inline-block;
 	width: 100%;
@@ -79,35 +75,28 @@ nav > a {
 	width: 12%;
 	min-height: 25px;
 	margin-left: .2%;
-	background: #B0C4DE;
+	background: #87CEFA;
 	color: #17176C;
 	text-align: center;
 	border-radius: 15px;
 	transition: border-radius 2s, transform 3s, background 1.5s, color 1s;
 }
 nav > a:hover {
-	background: #87CEEB;
+	background: #48D1CC;
 	color: #4169E1;
-	border-radius: -5% 20% 10px 20%;
-	transform: scale(1.2);
-
+	border-radius: 80%;
+	transform: scale(1.5);
 }
 
 main {
 	display:  inline-block;
 	width: 100%;
-
 }
-
-
 
 #posicion_web {
 	display:  inline-block;
 	width: 100%;
-
 }
-
-
 
 footer {
 	display:  inline-block;

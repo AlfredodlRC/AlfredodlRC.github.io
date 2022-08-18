@@ -8,21 +8,26 @@ article {
 	background: #F8F8FF;
 	border: 1px solid black;
 	border-radius: 20px;
-	box-shadow: 0px 0px 8px #888888;
+	box-shadow: 0px 0px 8px #888888, 0px 0px 8px #888888;
 	transition:
-		font-size 1.2s,
-		box-shadow 1s,
-		border-radius .75s,
-		transform 0.6s;
+		font-size 2.2s,
+		box-shadow 1.2s,
+		border-radius 1.75s,
+		transform 1.6s;
 }
 
 article:hover {
-	border-radius: 15px 22px 22px 15px;
-	box-shadow: 0px 0px 18px #888888;
 	transform: scale(1.05);
   	font-size: 1.3em;
 }
-
+.izquierda:hover {
+	box-shadow: 0px 0px 28px #AAAAAA,-10px 0px 8px #888888;
+	border-radius: 15px 32px 32px 15px;
+}
+.derecha:hover {
+	box-shadow: 0px 0px 28px #AAAAAA,10px 0px 8px #888888;
+	border-radius: 32px 15px 15px 32px;
+}
 article > p {
 	display: inline-block;
 	height: 2em;
