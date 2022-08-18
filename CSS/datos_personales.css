@@ -1,0 +1,49 @@
+main{
+	display: flex;
+	flex-direction: column;
+}
+
+
+.informacion {
+	display: inline-block;
+	width: 30em;
+	height: 2em;
+	background: #F8F8FF;
+	color: #4B0082;
+	margin-left: 1%;
+	text-align: center;
+	border-radius: 5px;	
+	box-shadow: 0px 0px 8px #888888;
+	transition: 
+		transform 1.5s,
+		margin-left 1s,
+		box-shadow 1.7s;
+}
+
+.informacion:hover {
+	transform: scale(1.2);
+	margin-left: 5%;
+	box-shadow: 0px 0px 18px #888888;
+}
+
+.titulo {
+	display: inline-block;
+	width: 10em;
+	height: 100%;
+	padding-left: 1em;
+	padding-top: 0.25em;
+	text-align: center;
+	border: 1px solid black;
+	border-radius: 5px 1px 1px 5px;
+}
+
+.dato {
+	display: inline-block;
+	width: 20em;
+	height: 100%;
+	padding-left: 1em;
+	padding-top: 0.25em;
+	text-align: center;
+	border: 1px solid black;
+	border-radius: 1px 5px 5px 1px;
+}

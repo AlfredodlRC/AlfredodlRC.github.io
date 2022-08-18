@@ -1,0 +1,63 @@
+
+
+section {
+	display: inline-block;
+	width: 100%;
+
+}
+
+article {
+	display: inline-block;
+	position:  relative;
+	width: 45%;
+	margin-left: 2.5%;
+	margin-bottom: 15px;
+	height: 3em;
+	background: #F8F8FF;
+	border: 1px solid black;
+	border-radius: 20px;
+	box-shadow: 0px 0px 8px #888888;
+	transition:
+		font-size 1.2s,
+		box-shadow 1s,
+		border-radius .75s,
+		transform 0.6s;
+}
+
+#redes_sociales > article {
+	width: 30%;
+}
+
+
+article:hover {
+	border-radius: 15px 22px 22px 15px;
+	box-shadow: 0px 0px 18px #888888;
+	transform: scale(1.05);
+  	font-size: 1.3em;
+}
+
+h2 {
+	text-align: center;
+}
+
+article > p, article > a {
+	display: inline-block;
+	height: 2em;
+	padding: 0;
+	margin-left: 20px;
+	position: absolute;
+  	top: 50%;
+  	margin-top: -.75em;
+  	margin-bottom: 15px;
+}
+article > a {
+	width: 100%;
+}
+
+img {
+	height: 2em;
+}
+
+article > p > span {
+  	margin-right: 12px;
+}

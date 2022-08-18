@@ -1,0 +1,48 @@
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+
+}
+
+section {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	width: 30%;	
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 1em;
+	border: 1px solid black;
+}
+
+section > * {
+	width: 100%;
+}
+#izquierda {
+	background: #00C4FF;
+	height: 75em;
+}
+#derecha {
+	height: 75em;
+}
+
+section span {
+	display: inline-block;
+	width: 7em;
+}
+progress {
+	background: cyan;
+
+}
+
+h2,h3,h4,p {
+	margin-top: .15em;
+	margin-bottom: .15em;
+	padding-top: .05em;
+	padding-bottom: .05em;
+
+}
+

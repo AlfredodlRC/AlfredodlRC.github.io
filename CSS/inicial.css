@@ -1,0 +1,41 @@
+section {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+
+}
+
+article {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	width: 97%;
+	height: 4em;
+	background: #F8F8FF;
+	color: #4B0082;
+	margin-bottom: .75em;
+	margin-left: 1%;
+	padding-left: 1%;
+	overflow-y: clip;
+	border: 1px solid black;
+	border-radius: 20px;
+	box-shadow: 0px 0px 8px #888888;
+	transition:
+		font-size 1.2s,
+		box-shadow 1.5s,
+		border-radius .75s,
+		height 2s;
+}
+
+article:hover {
+	height: 12em;
+	border-radius: 15px 22px 22px 15px;
+	box-shadow: 0px 0px 38px #888888;
+  	font-size: 1.1em;
+}
+
+h2 {
+	display: inline-block;
+	width: 100%;
+}
+
