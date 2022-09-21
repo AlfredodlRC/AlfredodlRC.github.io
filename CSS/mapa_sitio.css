@@ -1,0 +1,55 @@
+
+main {
+	display:  inline-block;
+	width: 85%;
+	margin-left: 1.5%;
+}
+
+aside {
+	display:  inline-block;
+	width: 11%;
+	vertical-align: top;
+	margin-left: 1%;
+	margin-top: 3em;
+	border: 1px solid black;
+	border-radius: 12px;
+	box-shadow: 0px 0px 8px #888888;
+	transition:
+		box-shadow 1s;
+}
+
+aside:hover {
+	box-shadow: 0px 0px 18px #888888;
+}
+
+main > img {
+	width: 95%;
+	margin-left: 2.5%;
+	border: 1px solid black;
+	border-radius: 20px;
+	box-shadow: 0px 0px 8px #888888;
+	transition:
+		font-size 1.2s,
+		box-shadow 1s,
+		border-radius .75s;
+}
+
+main > img:hover {
+	border-radius: 15px 22px 22px 15px;
+	box-shadow: 0px 0px 18px #888888;
+  	font-size: 1.3em;
+}
+
+label, select {
+	display: inline-block;
+	width: 95%;
+	margin-left: 2%;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	text-align: center;
+}
+
+select {
+	margin-bottom: 1.5em;
+}
+

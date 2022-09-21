@@ -1,0 +1,47 @@
+body {
+	display: grid;
+	grid:
+    'cabecera cabecera cabecera cabecera cabecera'
+    'navegador navegador navegador navegador navegador'
+    'dibujo dibujo dibujo dibujo datos'
+    'dibujo dibujo dibujo dibujo datos'
+    'dibujo dibujo dibujo dibujo datos'
+    'pie pie pie pie pie';
+	grid-template-columns: 100px auto 10em;
+   	width:  98%;
+   	margin-left: 1%;
+}
+
+header {
+	grid-area: cabecera;
+}
+
+nav {
+	grid-area: navegador;
+}
+
+main {
+	grid-area: dibujo;
+}
+
+
+aside {
+	grid-area: datos;
+	background: dimgrey;
+}
+
+footer {
+	grid-area: pie;
+}
+
+
+
+canvas {
+	width: 90%;
+	margin-left: 4%;
+	overflow: hidden;
+}
+
+
+
+
