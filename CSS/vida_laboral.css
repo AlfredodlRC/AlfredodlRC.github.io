@@ -11,7 +11,7 @@ article {
 	flex-wrap: wrap;
 	flex-direction: column;
 	width: 45%;
-	height: 9em;
+	height: 6em;
 	background: #F8F8FF;
 	color: #4B0082;
 	margin-bottom: .75em;
@@ -19,15 +19,19 @@ article {
 	border: 1px solid black;
 	border-radius: 20px;
 	box-shadow: 0px 0px 8px #888888;
+	overflow: hidden;
 	transition:
-		transform 1.2s,
-		box-shadow 1s,
+		transform .9s,
+		box-shadow .8s,
 		border-radius .75s;
 }
 
 article:hover {
 	border-radius: 15px 22px 22px 15px;
 	box-shadow: 0px 0px 18px #888888;
+	background: #F8F8FF;
+	color: #4B0082;
+	height: auto;
 	transform: scale(1.1);
 }
 
@@ -37,4 +41,15 @@ article > p {
 	padding: 0;
 	margin-left: 2.5%;
 }
+
+.cab_datos {
+	display: inline-block;
+	width: 20%;
+}
+
+.cab_func {
+	display: inline-block;
+	width: 3em;
+}
+
 

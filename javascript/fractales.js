@@ -22,53 +22,74 @@ let colores = [
 
 let valores_iniciales = [];
 
-window.addEventListener('load', function() {});
+window.addEventListener('load', (event) => {
+  dibujar_mandel();
+});
 
-function hacer_mapa_mandel(iteracciones) {
-  let x,y;
-  let inc_x,inc_y;  
-  let i;
-  let xx,yy,xxx,yyy;
-  let c_x,c_y;
-  let contador_x,contador_y;
-  let continuar;
+function dibujar_mandel() {
+  var canvas = document.getElementById("lienzo");
+  var ctx = canvas.getContext("2d");
+  xmin = -2;
+  xmax = 1;
+  ymin = -1;
+  ymax = 1;
+  puntos_x = parseFloat(getComputedStyle(canvas).width)/3;
+  puntos_y = parseFloat(getComputedStyle(canvas).height)/3;
 
-  let fila = [];
-  let mapa = [];
+  var image;
+  var data;
 
-  inc_x = (xmax - xmin) / puntos_x;
-  inc_y = (ymax - ymin) / puntos_y;
+        for(var x=0;x<puntos_x;x++)
+        {
+                for(var y=0;y<puntos_y;y++)
+                {
+                        var i=0;
+                        var cx=xmin+x/(puntos_x/(xmax-xmin));
+                        var cy=ymin+y/(puntos_y/(ymax-ymin));
+                        var zx=0;
+                        var zy=0;                        
+ 
+                        do
+                        {
+                                var xt=zx*zy;
+                                zx=zx*zx-zy*zy+cx;
+                                zy=2*xt+cy;
+                                i++;
+                        }
+                        while(i<255&&(zx*zx+zy*zy)<4);
 
+                        image = ctx.createImageData(1, 1); // pixel image
+                        data = image.data;
 
-  y = ymin;
-  for(contador_y = 0 ; contador_y < puntos_y ; contador_y++) {
-    x = xmin;
-    fila = [];
-    for(contador_x = 0 ; contador_x < puntos_x ; contador_x++) {
-      c_x = x;
-      c_y = y;
-      xxx = 0;
-      yyy = 0;
-      i = 0;
-      continuar = true;
-      while (continuar == true) {
-        xx = xxx * xxx - yyy * yyy;
-        yy = 2 * xxx * yyy;
-        xxx = xx + c_x;
-        yyy = yy + c_y;
-        i +=1;
-        if (i >= iteracciones) { continuar = false; }
-        if ((xxx * xxx + yyy * yyy) > 4) { continuar = false; }
-      }
-      fila.push(i);
-      x += inc_x;
-    }
-    y += inc_y;
-    mapa.push(fila);
-  }
+ 
+                        //ctx.beginPath();
+                        //ctx.rect(x, y, 1, 1);
+                        if (i == 255) {
+                          //ctx.fillStyle ="#000";
+                        data[0] = 0;
+                        data[1] = 0;
+                        data[2] = 0;
+                        data[3] = 255;
+                        } else {
+                          //ctx.fillStyle =colores[ i % colores.length];
+                        data[0] = 255;
+                        data[1] = 255;
+                        data[2] = 255;
+                        data[3] = 255;
+                        }
+                        ctx.putImageData(image, x, y);
 
-  return mapa;
+                        //ctx.fill();
+                }
+        }
+  //ctx.beginPath();
+  //ctx.rect(0, 0, 256, 127);
+  //ctx.stroke();
+
 }
+
+
+
 
 
 

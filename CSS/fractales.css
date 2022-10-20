@@ -4,10 +4,9 @@ body {
     'cabecera cabecera cabecera cabecera cabecera'
     'navegador navegador navegador navegador navegador'
     'dibujo dibujo dibujo dibujo datos'
-    'dibujo dibujo dibujo dibujo datos'
-    'dibujo dibujo dibujo dibujo datos'
     'pie pie pie pie pie';
 	grid-template-columns: 100px auto 10em;
+	grid-template-rows: 1fr 1fr auto 1fr;
    	width:  98%;
    	margin-left: 1%;
 }
@@ -38,8 +37,7 @@ footer {
 
 canvas {
 	width: 90%;
-	margin-left: 4%;
-	overflow: hidden;
+	border:  1px solid black;
 }
 
 
