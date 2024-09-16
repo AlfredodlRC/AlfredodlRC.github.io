@@ -31,7 +31,7 @@ header > div {
 	align-self: center;
 	border: 1px dotted lightgray;
 	border-radius: 2px;
-	background: #FFFAFA;
+	background: #fefeff;
 	transition: width 1.5s;	
 }
 
@@ -56,13 +56,13 @@ header > div:hover {
 
 .contacto_corto:hover{
 	width: 8em;
-	background: content-box radial-gradient(#FFFAFA, #AFEEEE);
+	background: content-box radial-gradient(#FAFAFF, #AFEEEE);
 }
 
 
 .contacto_largo:hover{
 	width: 20em;
-	background: content-box radial-gradient(#FFFAFA, skyblue);
+	background: content-box radial-gradient(#FAFAFF, skyblue);
 }
 
 
